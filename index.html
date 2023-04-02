@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+        <div id="main_image">
+            <div></div>
+          </div>
+        <div class="main_form">
+    <form class="form">
+            <div class="form-inner">
+          <b>Вид наружной рекламы:</b><br/>
+            <select onchange="calc()" id="type_design" style="margin-top: 10px;">
+                <option value="0">Выбрать</option>
+                <option value="700">Буквы на 3D принтере</option>
+                <option value="1000">Буквы из нержавеющей стали</option>
+                <option value="2000">Буквы из пенопласта</option>
+                <option value="3000">Буквы из жидкого акрила </option>
+                <option value="5000">Буквы из пенопласта без подсветки</option>
+                <option value="1000">Пластиковые буквы</option>
+                <option value="2000">Тканевый лайтбокс</option>
+                <option value="4500">Композитный короб с инкрустацией</option>
+                <option value="1000">Акрилайт</option>
+                <option value="9000">Панель Crystral</option>
+                <option value="5000">Панель Magnetik</option>
+                <option value="12000">Панель кронштейн круглый</option>
+                <option value="25000">Панель кронштейн квадратный</option>
+            </select><br/>
+            <input type="checkbox" onchange="calc()" value="3000" id="is_html" />
+            <label for="is_html">Световые</label>
+            <br/>
+            Количество букв: <input type="text" id="count" value="1" onchange="calc()" />
+            <div class="result">Стоимость работы: <span id="result">0</span> руб.</div>
+          </form>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="script/script.js"></script>
+    </html> 
